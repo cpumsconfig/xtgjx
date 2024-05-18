@@ -1,12 +1,12 @@
 import os
 import requests
 from time import sleep
-url='http://xtcctvhd.hostfree.asia/1.txt'
+url='http://cpumsconfig.github.io/1.txt'
 res=requests.get(url)
 f=open('1.txt', 'wb')
 f.write(res.content)
 f.close
-url_1='http://xtcctvhd.hostfree.asia/2.txt'
+url_1='http://cpumsconfig.github.io/2.txt'
 res_1=requests.get(url_1)
 e=open('2.txt', 'wb')
 e.write(res_1.content)
