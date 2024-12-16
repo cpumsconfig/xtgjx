@@ -10,6 +10,7 @@ echo 3. 检查磁盘 (CHKDSK)
 echo 4. 任务管理器
 echo 5. 退出
 echo 6. 修复系统
+echo 7. 模块
 echo 8. 创建签名证书
 echo 9. 创建用户
 echo ============================
@@ -22,7 +23,7 @@ if "%choice%"=="3" goto check_disk
 if "%choice%"=="4" goto task_manager
 if "%choice%"=="5" goto exit
 if "%choice%"=="6" goto repair_system
-if "%choice%"=="7" goto rts
+if "%choice%"=="7" goto mobile
 if "%choice%"=="8" goto signature
 if "%choice%"=="9" goto Create_User
 
@@ -71,6 +72,8 @@ SFC /scannow
 pause
 goto menu
 
+:mobile
+start mobile/cai.exe
 
 
 :signature
